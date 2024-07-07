@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+    padding: 0;
+}
+
+.hcon {
+    background-color: black;
+    padding: 10px;
+}
+
+.headercon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.blankspace {
+    flex-grow: 1;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons .button {
+    width: 30px;
+    height: 30px;
+}
+
+.maincon {
+    margin-top: 10px;
+    background-color: #020202;
+}
+
+/* Banner section */
+.banner {
+    position: relative;
+}
+
+.bannerimg {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+.bottom {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    padding-left: 220px; /* Adjust left padding to make space for profile image */
+}
+
+.profile_img {
+    position: absolute;
+    top: -95.5px; /* Move the profile image up by half its height */
+    left: 10px;
+}
+
+.profile_img img {
+    width: 191px;
+    height: 191px;
+    border-radius: 50%;
+    border: 5px solid #333; /* Border around the profile image */
+}
+
+.bottom_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    min-height: 100px;
+}
+
+.title h4 {
+    color: grey;
+    font-weight: bold;
+    margin: 0;
+}
+
+.name p {
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+
+/* Info container */
+.infcon {
+    display: flex;
+    gap: 24px;
+    padding: 20px;
+}
+
+/* Left and About_me sections */
+.left, .About_me {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.skill_cointainer, .social_plt {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 22px;
+}
+
+.skill_cointainer {
+    text-align: left;
+}
+
+
+/* Ensure vertical gap of 22 pixels between items in skill_cointainer and social_plt */
+.skill_cointainer > *, .social_plt > * {
+    margin-bottom: 22px;
+}
+
+.heading_skills h2 {
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+.Web_Development, .AI/ML {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.Web_Development h6, .AI/ML h6 {
+    margin: 0 0 5px 0;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-left: 20px; /* Adjust for left alignment */
+}
+
+ul li::before {
+    content: '';
+    display: inline-block;
+    width: 10px; /* Adjust as necessary */
+    height: 10px; /* Adjust as necessary */
+    background-size: contain;
+    margin-right: 8px;
+}
+
+/* Social platforms */
+.social_plt {
+    text-align: left;
+}
+
+.scointainer {
+    display: inline-block;
+    text-align: left;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;    
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.lin {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lin a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.lin img {
+    width: 40px;
+    height: 40px;
+}
+
+/* About me section */
+.About_me {
+    flex: 1;
+    text-align: center;
+}
+
+.abtme {
+    display: inline-block;
+    text-align: left;
+    padding:20px;
+    
+}
+
+.abtmep {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.abtmep img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.role {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.abtme p {
+    margin: 10px 0;
+}
+
+/* Contact section */
+.contact-section {
+    background-color: #444; /* Grey background */
+    border-radius: 16px; /* Curved borders */
+    padding: 20px;
+    margin-top: 24px;
+    color: white;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.contact-section p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-section input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-section .contact-btn {
+    background-color: #666; /* Button background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .contact-btn:hover {
+    background-color: #888; /* Button hover effect */
+}
+
+.lin div {
+    display: flex;
+    align-items: center;
+}
+
+.lin div a {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* adjust the gap between the image and the text */
+}
+
+.lin div img {
+    height: 30px;
+    width: 30px; /* set the image size to 30x30 pixels */
+}
+
+.lin div h6 {
+    margin: 0; /* remove default margin from h6 */
+}
+
+
+
+
+
+.ui, .figma, .adobe, .webflow, .react, .next, .node, .express, .html, .css, .javascript, .python, .tensor, .pytorch, .panda, .opencv {
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.ui {
+    background-image: url('ui-ux.png');
+}
+
+.figma {
+    background-image: url('figma.png');
+}
+
+.adobe {
+    background-image: url('adobe.png');
+}
+
+.webflow {
+    background-image: url('webflow.png');
+}
+
+.react {
+    background-image: url('react.png');
+}
+
+.next {
+    background-image: url('nextjs.svg');
+}
+
+.node {
+    background-image: url('node.png');
+}
+
+.express {
+    background-image: url('express.png');
+}
+
+.html {
+    background-image: url('html.png');
+}
+
+.css {
+    background-image: url('css.png');
+}
+
+.javascript {
+    background-image: url('js.png');
+}
+
+.python {
+    background-image: url('python.png');
+}
+
+.tensor {
+    background-image: url('tensor.png');
+}
+
+.pytorch {
+    background-image: url('pytorch.png');
+}
+
+.panda {
+    background-image: url('panda.svg');
+}
+
+.opencv {
+    background-image: url('opencv.png');
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.footer-links ul li a:hover {
+    color: #ccc;
+}
